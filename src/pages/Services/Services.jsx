@@ -19,22 +19,20 @@ const Services = () => {
     <div>
       <PageHeading content="Services" />
       {/* Services */}
-      <div
-        className="bg-fixed bg-cover bg-center pt-20 pb-10"
-       >
+      <div className="bg-fixed bg-cover bg-center pt-20 pb-10">
         <div className="px-5 ">
           <div className="flex items-center">
             <div className="h-[2px] w-[100px] bg-main"></div>
             <SubHead color="main" title="Our Services For You" />
           </div>
           <div className="lg:flex items-center justify-between">
-          <SectionHead
+            <SectionHead
               color="black"
               title="Push Your Limits Forward We Offer To You "
             ></SectionHead>
             <div className="lg:w-3/12">
               <Button>
-                <Link to="/login" className="md:px-2">
+                <Link to="/contact" className="md:px-2">
                   Become A Member
                 </Link>
               </Button>{" "}

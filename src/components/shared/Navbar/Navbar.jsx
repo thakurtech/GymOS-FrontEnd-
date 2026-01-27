@@ -7,15 +7,10 @@ import Button from "../../Buttons/Button";
 
 const Navbar = () => {
   const isLogged = false;
-  // Mobile Menu State 
+  // Mobile Menu State
   const [mobileMenu, setMobileMenu] = useState(false);
   // Menus List
-  const menus = [
-    "Home",
-    "About",
-    "Gallery", 
-    "Contact",
-  ];
+  const menus = ["Home", "About", "Gallery", "Contact"];
 
   return (
     <div className="bg-[#00000080] py-4 fixed top-0 z-50 w-full">
@@ -48,30 +43,6 @@ const Navbar = () => {
                 </Link>
               );
             })}
-            <li className="block px-4  mt-2 text-white hover:text-main text-xl font-light transition duration-300  ">
-              {isLogged ? (
-                <button className="mx-2 h-full">
-                  <Link to="/dashboard">
-                    <Icon
-                      IconName="fa-regular fa-user"
-                      color="main"
-                      size="xl"
-                    ></Icon>
-                  </Link>
-                </button>
-              ) : (
-                <Link to="/login">
-                  <Button>
-                    <span className="px-2">Log In</span>
-                    <Icon
-                      IconName="fa-solid fa-arrow-right-to-bracket"
-                      color="white"
-                      size="2xl"
-                    ></Icon>
-                  </Button>
-                </Link>
-              )}
-            </li>
           </ul>
         )}
       </div>
@@ -99,30 +70,6 @@ const Navbar = () => {
                   </Link>
                 );
               })}
-              <li className="block px-4  mt-2 text-white hover:text-main text-xl font-light transition duration-300  ">
-                {isLogged ? (
-                  <button className="mx-2 h-full">
-                    <Link to="/dashboard">
-                      <Icon
-                        IconName="fa-regular fa-user"
-                        color="main"
-                        size="xl"
-                      ></Icon>
-                    </Link>
-                  </button>
-                ) : (
-                  <Link to="/login">
-                    <Button>
-                      <span className="px-2">Log In</span>
-                      <Icon
-                        IconName="fa-solid fa-arrow-right-to-bracket"
-                        color="white"
-                        size="2xl"
-                      ></Icon>
-                    </Button>
-                  </Link>
-                )}
-              </li>
             </ul>
           </div>
         </div>

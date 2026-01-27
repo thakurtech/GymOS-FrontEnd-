@@ -17,7 +17,7 @@ import SubHead from "../components/Heading/SubHead";
 import Button from "../components/Buttons/Button";
 import { Link } from "react-router-dom";
 import Icon from "../components/Buttons/Icon";
-// import PlanCard from "../components/Plans/PlanCard";                                                                   
+// import PlanCard from "../components/Plans/PlanCard";
 // import { useGetAllMembershipPlanQuery } from "../redux/api/membership/membershipApi";
 import SectionHead from "../components/Heading/SectionHead";
 import HeroVideo from "../components/Video/HeroVideo";
@@ -84,7 +84,7 @@ const Home = () => {
             Build Perfect body Shape for good and Healthy life.
           </h2>
           <Button>
-            <Link to="/dashboard" className="md:px-2">
+            <Link to="/contact" className="md:px-2">
               Become A Member
             </Link>
           </Button>
@@ -123,18 +123,18 @@ const Home = () => {
             title="Build Perfect Body Shape For Good And Healthy Life."
           ></SectionHead>
           <p className="text-base text-blackGray">
-            Our Trainer presents your services with flexible, convenient and cdpose
-            layouts. You can select your favorite layouts & elements for cular
-            ts with unlimited ustomization possibilities. Pixel-perfect
+            Our Trainer presents your services with flexible, convenient and
+            cdpose layouts. You can select your favorite layouts & elements for
+            cular ts with unlimited ustomization possibilities. Pixel-perfect
             replication of the designers is intended.
           </p>
           <p className="text-base text-blackGray my-6">
-            Our Trainer presents your services with flexible, convefnient and chient
-            anipurpose layouts. You can select your favorite layouts.
+            Our Trainer presents your services with flexible, convefnient and
+            chient anipurpose layouts. You can select your favorite layouts.
           </p>
           <div className="my-10">
             <Button>
-              <Link to="/dashboard" className="md:px-2">
+              <Link to="/contact" className="md:px-2">
                 Become A Member
               </Link>
             </Button>
@@ -158,7 +158,7 @@ const Home = () => {
             ></SectionHead>
             <div className="lg:w-3/12">
               <Button>
-                <Link to="/dashboard" className="md:px-2">
+                <Link to="/contact" className="md:px-2">
                   Become A Member
                 </Link>
               </Button>{" "}
@@ -263,7 +263,6 @@ const Home = () => {
           </div>
         </div>
       </section>
-
 
       {/* Team Members */}
       <div className="bg-white pt-20 pb-10">

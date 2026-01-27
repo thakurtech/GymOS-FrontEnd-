@@ -37,18 +37,18 @@ const About = () => {
             title="Build Perfect Body Shape For Good And Healthy Life."
           ></SectionHead>
           <p className="text-base text-blackGray">
-            Our Trainer presents your services with flexible, convenient and cdpose
-            layouts. You can select your favorite layouts & elements for cular
-            ts with unlimited ustomization possibilities. Pixel-perfect
+            Our Trainer presents your services with flexible, convenient and
+            cdpose layouts. You can select your favorite layouts & elements for
+            cular ts with unlimited ustomization possibilities. Pixel-perfect
             replication of the designers is intended.
           </p>
           <p className="text-base text-blackGray my-6">
-            Our Trainer presents your services with flexible, convefnient and chient
-            anipurpose layouts. You can select your favorite layouts.
+            Our Trainer presents your services with flexible, convefnient and
+            chient anipurpose layouts. You can select your favorite layouts.
           </p>
           <div className="my-10">
             <Button>
-              <Link to="/login" className="md:px-2">
+              <Link to="/contact" className="md:px-2">
                 Become A Member
               </Link>
             </Button>
@@ -91,7 +91,7 @@ const About = () => {
             <SubHead color="main" title="Our Team Members" />
           </div>
           <div className="lg:flex items-center justify-between">
-          <SectionHead
+            <SectionHead
               color="black"
               title="Our Most Exprienced Trainers"
             ></SectionHead>
