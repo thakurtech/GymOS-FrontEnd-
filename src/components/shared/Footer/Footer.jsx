@@ -23,10 +23,10 @@ const Footer = () => {
                 <Link to="/about">About Us</Link>
               </li>
               <li className={footerList}>
-                <Link to="/">Privecy & policy</Link>
+                <Link to="/privacy">Privacy & policy</Link>
               </li>
               <li className={footerList}>
-                <Link to="/">Contact</Link>
+                <Link to="/contact">Contact</Link>
               </li>
               <li className={footerList}>
                 <Link to="/">Company</Link>
@@ -36,16 +36,15 @@ const Footer = () => {
           <div className="mx-4 my-10">
             <h2 className={footerHead}>OPEN HOUR</h2>
             <ul className="mt-10">
-              <li className={footerList}>Monda-Thursday (11am-7pm)</li>
+              <li className={footerList}>Monday-Saturday (11am-7pm)</li>
               <li className={footerList}>Sunday (close)</li>
-              <li className={footerList}>Saturday (11am-7pm)</li>
             </ul>
           </div>
           <div className="mx-4 my-10">
             <h2 className={footerHead}>Resources</h2>
             <ul className="mt-10">
-              <li className={footerList}>Protien Insurance</li>
-              <li className={footerList}>Trainners</li>
+              <li className={footerList}>Protein Insurance</li>
+              <li className={footerList}>Trainers</li>
               <li className={footerList}>Car</li>
             </ul>
           </div>
@@ -53,36 +52,20 @@ const Footer = () => {
             <img src={footerLogo} alt="" />
             <p className="font-[14px] text-gray my-10">
               {" "}
-              GThe trade war currently ensuing between te US anfd several
+              The trade war currently ensuing between te US anfd several
               natxions around thdhe globe, most fiercely with.
             </p>
             <div className="flex  space-x-4">
-              <a
-                href="www.linkedin.com/sumitthakur7"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="/" target="_blank" rel="noreferrer">
                 <FaFacebookF className="text-gray text-[1.3rem] hover:text-main" />
               </a>
-              <a
-                href="www.linkedin.com/sumitthakur7"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="/" target="_blank" rel="noreferrer">
                 <FaXTwitter className="text-gray text-[1.3rem] hover:text-main" />
               </a>
-              <a
-                href="www.linkedin.com/sumitthakur7"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="/" target="_blank" rel="noreferrer">
                 <FaInstagram className="text-gray text-[1.3rem] hover:text-main" />
               </a>
-              <a
-                href="www.linkedin.com/sumitthakur7"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="/" target="_blank" rel="noreferrer">
                 <FaGlobe className="text-gray text-[1.3rem] hover:text-main" />
               </a>
             </div>
@@ -90,7 +73,7 @@ const Footer = () => {
         </div>
         <div className="my-10  border-t-2 border-gray">
           <p className="text-gray text-center p-4">
-            Copyright &copy; All rights reserved by Abhishek , Mukul and Sumit
+            Copyright &copy; All rights reserved by FitXLGym 2024
           </p>
         </div>
       </div>

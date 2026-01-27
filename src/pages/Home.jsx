@@ -29,19 +29,19 @@ const Home = () => {
   // Testimonials
   const testimonials = [
     {
-      name: "Abhishek Naula",
+      name: "Jane Smith",
       feedback:
         "I love this gym! The trainers are knowledgeable and motivating, the equipment is top-notch, and the atmosphere is always welcoming. I've seen fantastic results since I joined.",
       title: " Fitness Enthusiast",
     },
     {
-      name: "Sumit Thakur",
+      name: "John Doe",
       feedback:
         "I've been a member of this gym for a year, and I couldn't be happier. The cleanliness and hygiene standards are excellent, and the staff is friendly and helpful.",
       title: "Loyal Member",
     },
     {
-      name: "Mukul Rana",
+      name: "Alex Johnson",
       feedback:
         "The group fitness classes at this gym are outstanding. The instructors are passionate and energetic, and the variety of classes keeps me engaged and motivated to work out regularly. ",
       title: "Group Fitness Fanatic",
@@ -52,13 +52,13 @@ const Home = () => {
 
   const nextTestimonial = () => {
     setCurrentTestimonialIndex(
-      (currentTestimonialIndex + 1) % testimonials.length
+      (currentTestimonialIndex + 1) % testimonials.length,
     );
   };
 
   const previousTestimonial = () => {
     setCurrentTestimonialIndex(
-      (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length
+      (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length,
     );
   };
 
@@ -75,7 +75,7 @@ const Home = () => {
         <div className="px-4 md:px-10">
           <div className="flex items-center">
             <div className="h-[2px] w-[100px] bg-main"></div>
-            <SubHead color="white" title="Sumit Thakur" />
+            <SubHead color="white" title="John Doe" />
           </div>
           <h2
             className="text-white text-extraLarge md:text-[50px] md:leading-none md:w-[80%] xl:w-[70%] font-bold uppercase py-16"
@@ -287,17 +287,17 @@ const Home = () => {
         </div>
         <div className="md:flex justify-around">
           <TrainnerCard
-            name="Abhishek Narula"
+            name="John Doe"
             title="Certified Fitness Coach"
             image={team1}
           ></TrainnerCard>
           <TrainnerCard
-            name="Mukul Rana"
+            name="John Doe"
             title="Strength and Conditioning Specialist"
             image={team2}
           ></TrainnerCard>
           <TrainnerCard
-            name="Sumit Thakur"
+            name="John Doe"
             title="Personal Trainer and Nutrition Expert"
             image={team3}
           ></TrainnerCard>
@@ -362,7 +362,7 @@ const Home = () => {
               <div>
                 <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
                 <h2 className="text-[30px]">Kick Boxing</h2>
-                <p>by Sumit Thakur</p>
+                <p>by John Doe</p>
               </div>
             </li>
           </ul>
