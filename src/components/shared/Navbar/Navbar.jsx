@@ -1,9 +1,10 @@
 import React, { useState } from "react";
-import logo from "../../../assets/logo/logo.png";
+import logo from "../../../assets/logo/fitxl.png";
 import { Link } from "react-router-dom";
 // import { isLoggedUser } from "../../../service/storeUserInfo";
 import Icon from "../../Buttons/Icon";
 import Button from "../../Buttons/Button";
+import "./Navbar.css";
 
 const Navbar = () => {
   const isLogged = false;
@@ -13,31 +14,31 @@ const Navbar = () => {
   const menus = ["Home", "About", "Gallery", "Contact"];
 
   return (
-    <div className="bg-[#00000080] py-4 fixed top-0 z-50 w-full">
+    <div className="navbar-container">
       {/* Mobile Menu */}
-      <div className="flex items-center justify-between mx-2 sm:mx-6 md:mx-10  lg:hidden ">
-        <Link to="/">
-          <img src={logo} alt="Fitness one Logo" />
+      <div className="navbar-mobile">
+        <Link to="/" className="navbar-logo-mobile">
+          <img src={logo} alt="FitXL Logo" className="h-12 w-auto" />
         </Link>
-        <div className="mx-4">
-          {mobileMenu ? (
-            <button onClick={() => setMobileMenu(false)}>
-              <Icon IconName="fa-solid fa-xmark" color="white" size="xl"></Icon>
-            </button>
-          ) : (
-            <button onClick={() => setMobileMenu(true)}>
-              <Icon IconName="fa-solid fa-bars" color="white" size="xl"></Icon>
-            </button>
-          )}
+        <div className="hamburger-menu">
+          <button
+            className={`hamburger-btn ${mobileMenu ? "active" : ""}`}
+            onClick={() => setMobileMenu(!mobileMenu)}
+          >
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
         </div>
         {mobileMenu && (
-          <ul className="absolute bg-white w-[90%] top-20 -left-[20px] px-2 mx-10 pb-4">
+          <ul className="mobile-menu-list">
             {menus.map((menu, index) => {
               return (
                 <Link
                   to={menu === "Home" ? "/" : menu.toLowerCase()}
                   key={index}
-                  className="font-roboto font-medium block px-4 py-2 mt-2 text-sm text-black hover:text-main text-xl font-light transition duration-300"
+                  onClick={() => setMobileMenu(false)}
+                  className="mobile-menu-item"
                 >
                   <li>{menu}</li>
                 </Link>
@@ -46,25 +47,20 @@ const Navbar = () => {
           </ul>
         )}
       </div>
-      {/* Mobile Menu */}
       {/* Desktop Menu */}
-      <div className="hidden lg:block ">
-        <div className="flex items-center justify-between lg:mx-10 xl:mx-20  ">
-          <div>
-            <Link to="/">
-              <img src={logo} alt="Fitness one Logo" />
-            </Link>
-          </div>
-          <div className="flex items-center ">
-            {/* Menus */}
-
-            <ul className="flex  ">
+      <div className="navbar-desktop">
+        <div className="navbar-content">
+          <Link to="/" className="navbar-logo-desktop">
+            <img src={logo} alt="FitXL Logo" className="h-14 w-auto" />
+          </Link>
+          <div className="navbar-links">
+            <ul className="menu-list">
               {menus.map((menu, index) => {
                 return (
                   <Link
                     to={menu === "Home" ? "/" : menu.toLowerCase()}
                     key={index}
-                    className="font-roboto font-medium block px-4 py-2 mt-2 text-white hover:text-main text-xl font-light transition duration-300"
+                    className="menu-item"
                   >
                     <li>{menu}</li>
                   </Link>
@@ -74,7 +70,6 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      {/* Desktop Menu */}
     </div>
   );
 };

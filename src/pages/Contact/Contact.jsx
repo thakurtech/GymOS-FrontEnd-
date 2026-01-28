@@ -15,9 +15,9 @@ const Contact = () => {
   const { register, handleSubmit } = useForm();
   const onSubmit = async (data) => {
     // const res = await sendMessage(data);
-    
-      toast.success("Message sent successfully");
-      console.log(data);
+
+    toast.success("Message sent successfully");
+    console.log(data);
   };
 
   return (
@@ -69,21 +69,21 @@ const Contact = () => {
             <Icon IconName="fa-solid fa-house" color="gray" size="xl" />
 
             <div className="leading-none mx-4 my-8">
-              <h3 className="text-xl">Govindpuram  , Ghaziabad</h3>
-              <p className="text-[#8a8a8a]">UP, IND </p>
+              <h3 className="text-xl">Plot no. 69, Sector 28, Chakkarpur</h3>
+              <p className="text-[#8a8a8a]">Gurugram, Haryana 122002</p>
             </div>
           </div>
           <div className="flex items-center">
             <Icon IconName="fa-solid fa-phone" color="gray" size="xl" />
             <div className="leading-none mx-4 my-8">
-              <h3 className="text-xl">+91 8700942276</h3>
+              <h3 className="text-xl">+91 9540285572</h3>
               <p className="text-[#8a8a8a]">Mon to Fri 9am to 6pm</p>
             </div>
           </div>
           <div className="flex items-center">
             <Icon IconName="fa-solid fa-envelope" color="gray" size="xl" />
             <div className="leading-none mx-4 my-8">
-              <h3 className="text-xl">Sumit_thakur1@outlook.com</h3>
+              <h3 className="text-xl">fitxlgym@gmail.com</h3>
               <p className="text-[#8a8a8a]">Send us your query anytime!</p>
             </div>
           </div>

@@ -8,7 +8,7 @@ export default {
       roboto: ["Roboto", "sans-serif"],
     },
     colors: {
-      main: "#ff4d37",
+      main: "#11CA42",
       blackGray: "#212025",
       sky: "#f7fdff",
       white: "#FFFFFF",
@@ -17,7 +17,7 @@ export default {
       //
       red: "#ff1313",
       gray: "#c4c4c4",
-      orange: "#f04e3c",
+      orange: "#11CA42",
       whiteGray: "#ededed",
       blue: "#112957",
       whiteGray: "#e9f0f4",

@@ -30,40 +30,39 @@ const Services = () => {
               color="black"
               title="Push Your Limits Forward We Offer To You "
             ></SectionHead>
-            <div className="lg:w-3/12">
+            {/* <div className="lg:w-3/12">
               <Button>
                 <Link to="/contact" className="md:px-2">
                   Become A Member
                 </Link>
               </Button>{" "}
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="md:flex justify-center">
           <ServiceCard
             icon="fa-solid fa-dumbbell"
-            title="health caring"
-            description="The sea freight service has grown considerably in recent years. We spend
-            time getting to know..."
+            title="Gymnasium"
+            description="State-of-the-art fitness equipment and facilities designed to help you achieve your fitness goals with professional guidance."
             path="/services"
             content="Discover more About us"
+            image="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&h=500&fit=crop"
           ></ServiceCard>
           <ServiceCard
-            icon="fa-solid fa-dumbbell"
-            title="QUALITY EQUIPMENT"
-            status="active"
-            description="The sea freight service has grown considerably in recent years. We spend
-            time getting to know..."
+            icon="fa-solid fa-music"
+            title="Dance Studio"
+            description="Professional dance classes and studio space for various dance forms to enhance your fitness and coordination."
             path="/services"
             content="Discover more About us"
+            image="https://images.unsplash.com/photo-1546027658371-ded94e9029a5?w=500&h=500&fit=crop"
           ></ServiceCard>
           <ServiceCard
-            icon="fa-solid fa-dumbbell"
-            title="gym strategies"
-            description="The sea freight service has grown considerably in recent years. We spend
-            time getting to know..."
+            icon="fa-solid fa-utensils"
+            title="Diet Cafe"
+            description="Nutritious meal options and dietary guidance to complement your fitness journey and health goals."
             path="/services"
             content="Discover more About us"
+            image="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=500&h=500&fit=crop"
           ></ServiceCard>
         </div>
       </div>

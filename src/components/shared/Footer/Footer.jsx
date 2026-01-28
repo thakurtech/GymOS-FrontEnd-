@@ -1,6 +1,6 @@
 import React from "react";
 import footerImage from "../../../assets/footer/footer.png";
-import footerLogo from "../../../assets/logo/logo2_footer.png";
+import footerLogo from "../../../assets/logo/fitxl.png";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaInstagram, FaGlobe } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
@@ -22,9 +22,9 @@ const Footer = () => {
               <li className={footerList}>
                 <Link to="/about">About Us</Link>
               </li>
-              <li className={footerList}>
+              {/* <li className={footerList}>
                 <Link to="/privacy">Privacy & policy</Link>
-              </li>
+              </li> */}
               <li className={footerList}>
                 <Link to="/contact">Contact</Link>
               </li>
@@ -41,7 +41,7 @@ const Footer = () => {
             </ul>
           </div>
           <div className="mx-4 my-10">
-            <h2 className={footerHead}>Resources</h2>
+            <h2 className={footerHead}>RESOURCES</h2>
             <ul className="mt-10">
               <li className={footerList}>Protein Insurance</li>
               <li className={footerList}>Trainers</li>
@@ -49,11 +49,12 @@ const Footer = () => {
             </ul>
           </div>
           <div className="mx-4 my-10">
-            <img src={footerLogo} alt="" />
+            <img src={footerLogo} alt="FitXL Logo" className="h-20 w-auto" />
             <p className="font-[14px] text-gray my-10">
-              {" "}
-              The trade war currently ensuing between te US anfd several
-              natxions around thdhe globe, most fiercely with.
+              FitXL Gym is your ultimate destination for fitness excellence. We
+              provide state-of-the-art gymnasium facilities, professional dance
+              studio, and a nutritious diet cafe to transform your fitness
+              journey.
             </p>
             <div className="flex  space-x-4">
               <a href="/" target="_blank" rel="noreferrer">
@@ -62,7 +63,11 @@ const Footer = () => {
               <a href="/" target="_blank" rel="noreferrer">
                 <FaXTwitter className="text-gray text-[1.3rem] hover:text-main" />
               </a>
-              <a href="/" target="_blank" rel="noreferrer">
+              <a
+                href="https://www.instagram.com/_fitxl?igsh=MWNkaXl5aW1tb3RsdQ=="
+                target="_blank"
+                rel="noreferrer"
+              >
                 <FaInstagram className="text-gray text-[1.3rem] hover:text-main" />
               </a>
               <a href="/" target="_blank" rel="noreferrer">
@@ -73,7 +78,7 @@ const Footer = () => {
         </div>
         <div className="my-10  border-t-2 border-gray">
           <p className="text-gray text-center p-4">
-            Copyright &copy; All rights reserved by FitXLGym 2024
+            Copyright &copy; All rights reserved by FitXL 2026
           </p>
         </div>
       </div>

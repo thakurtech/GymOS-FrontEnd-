@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import heroImage from "../assets/hero/h1_hero.png";
-import { FaPlay } from "react-icons/fa";
 import aboutImage from "../assets/gallery/about.png";
 import serviceImage from "../assets/gallery/service.png";
 import ServiceCard from "../components/ServiceCard/ServiceCard";
@@ -20,7 +19,8 @@ import Icon from "../components/Buttons/Icon";
 // import PlanCard from "../components/Plans/PlanCard";
 // import { useGetAllMembershipPlanQuery } from "../redux/api/membership/membershipApi";
 import SectionHead from "../components/Heading/SectionHead";
-import HeroVideo from "../components/Video/HeroVideo";
+import WhatsAppButton from "../components/WhatsAppButton/WhatsAppButton";
+import ScrollToTopButton from "../components/ScrollToTopButton/ScrollToTopButton";
 
 const Home = () => {
   // Handle Our Plans
@@ -35,7 +35,7 @@ const Home = () => {
       title: " Fitness Enthusiast",
     },
     {
-      name: "John Doe",
+      name: "Ashish Kaushik",
       feedback:
         "I've been a member of this gym for a year, and I couldn't be happier. The cleanliness and hygiene standards are excellent, and the staff is friendly and helpful.",
       title: "Loyal Member",
@@ -62,11 +62,10 @@ const Home = () => {
     );
   };
 
-  // Handel Video Status
-  const [video, setVideo] = useState(false);
-
   return (
     <div>
+      <WhatsAppButton phoneNumber="9540285572" />
+      <ScrollToTopButton />
       {/* Hero Section */}
       <div
         className="bg-fixed bg-cover bg-center pt-40 pb-6 md:pb-40 xl:h-screen md:flex items-center justify-between"
@@ -75,10 +74,10 @@ const Home = () => {
         <div className="px-4 md:px-10">
           <div className="flex items-center">
             <div className="h-[2px] w-[100px] bg-main"></div>
-            <SubHead color="white" title="John Doe" />
+            <SubHead color="white" title="Ashish Kaushik" />
           </div>
           <h2
-            className="text-white text-extraLarge md:text-[50px] md:leading-none md:w-[80%] xl:w-[70%] font-bold uppercase py-16"
+            className="text-white text-extraLarge md:text-[50px] md:leading-none md:w-[50%] xl:w-[50%] font-bold uppercase py-16"
             style={{ fontFamily: "'Teko', sans-serif" }}
           >
             Build Perfect body Shape for good and Healthy life.
@@ -89,21 +88,7 @@ const Home = () => {
             </Link>
           </Button>
         </div>
-        {/* Play button */}
-        <div className="relative py-10 flex justify-end">
-          <div className="cursor-pointer relative bg-main h-16 w-16 lg:h-20 lg:w-20  rounded-full flex items-center justify-center mx-6 md:mx-14 lg:mx-20  ">
-            <span
-              onClick={() => {
-                setVideo(!video);
-              }}
-              className="animate-ping absolute inline-flex h-full w-full rounded-full bg-main opacity-75"
-            ></span>
-            <FaPlay className="text-white text-[20px]" />
-          </div>
-        </div>
       </div>
-      {/* Video */}
-      {video && <HeroVideo video={video} setVideo={setVideo}></HeroVideo>}
       {/* About Section */}
       <div className="my-20 lg:flex items-center justify-between xl:my-40">
         <div className="px-5 lg:w-1/2">
@@ -156,40 +141,33 @@ const Home = () => {
               color="white"
               title="Push Your Limits Forward We Offer To You "
             ></SectionHead>
-            <div className="lg:w-3/12">
-              <Button>
-                <Link to="/contact" className="md:px-2">
-                  Become A Member
-                </Link>
-              </Button>{" "}
-            </div>
+            {/*   */}
           </div>
         </div>
         <div className="md:flex justify-center">
           <ServiceCard
-            icon="fa-solid fa-notes-medical"
-            title="health caring"
-            description="The sea freight service has grown considerably in recent years. We spend
-            time getting to know..."
-            path="/services"
-            content="Discover more About us"
-          ></ServiceCard>
-          <ServiceCard
             icon="fa-solid fa-dumbbell"
-            title="QUALITY EQUIPMENT"
-            status="active"
-            description="The sea freight service has grown considerably in recent years. We spend
-            time getting to know..."
+            title="Gymnasium"
+            description="State-of-the-art fitness equipment and facilities designed to help you achieve your fitness goals with professional guidance."
             path="/services"
             content="Discover more About us"
+            image="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?w=500&h=500&fit=crop"
           ></ServiceCard>
           <ServiceCard
-            icon="fa-regular fa-chess-rook"
-            title="gym strategies"
-            description="The sea freight service has grown considerably in recent years. We spend
-            time getting to know..."
+            icon="fa-solid fa-music"
+            title="Dance Studio"
+            description="Professional dance classes and studio space for various dance forms to enhance your fitness and coordination."
             path="/services"
             content="Discover more About us"
+            image="https://images.unsplash.com/photo-1546027658371-ded94e9029a5?w=500&h=500&fit=crop"
+          ></ServiceCard>
+          <ServiceCard
+            icon="fa-solid fa-utensils"
+            title="Diet Cafe"
+            description="Nutritious meal options and dietary guidance to complement your fitness journey and health goals."
+            path="/services"
+            content="Discover more About us"
+            image="https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=500&h=500&fit=crop"
           ></ServiceCard>
         </div>
       </div>
@@ -287,17 +265,17 @@ const Home = () => {
         </div>
         <div className="md:flex justify-around">
           <TrainnerCard
-            name="John Doe"
+            name="Ashish Kaushik"
             title="Certified Fitness Coach"
             image={team1}
           ></TrainnerCard>
           <TrainnerCard
-            name="John Doe"
+            name="Ashish Kaushik"
             title="Strength and Conditioning Specialist"
             image={team2}
           ></TrainnerCard>
           <TrainnerCard
-            name="John Doe"
+            name="Ashish Kaushik"
             title="Personal Trainer and Nutrition Expert"
             image={team3}
           ></TrainnerCard>
@@ -362,7 +340,7 @@ const Home = () => {
               <div>
                 <h5 className="bg-black text-white px-4 py-2">8am-10am</h5>
                 <h2 className="text-[30px]">Kick Boxing</h2>
-                <p>by John Doe</p>
+                <p>by Ashish Kaushik</p>
               </div>
             </li>
           </ul>
