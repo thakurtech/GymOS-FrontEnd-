@@ -54,7 +54,7 @@ const Services = () => {
             description="Professional dance classes and studio space for various dance forms to enhance your fitness and coordination."
             path="/services"
             content="Discover more About us"
-            image="https://images.unsplash.com/photo-1546027658371-ded94e9029a5?w=500&h=500&fit=crop"
+            image="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=500&h=500&fit=crop"
           ></ServiceCard>
           <ServiceCard
             icon="fa-solid fa-utensils"
